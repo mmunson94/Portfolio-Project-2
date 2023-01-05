@@ -16,6 +16,7 @@ body {
 
 h1 {
     text-align: center;
+    text-transform: uppercase;
 
 }
 
@@ -30,8 +31,9 @@ h1 {
 
 #question {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .container {
@@ -45,11 +47,50 @@ h1 {
     margin-right: auto;
     height: 200px;
     box-sizing: border-box;
-    
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-answers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 0 0 auto;
+    width: 75%;
+    gap: 10px;
+}
+
+.btn {
+    font-size: 1.25em;
+    margin: 0 0 auto;
+    width: auto;
+    padding: 0 0 10x;
+    background: black;
+    border-radius: 10px;
+    border: 50%;
+    color: white;
+    box-shadow: 0 0 6px 2px; 
+}
+
+.next-btn {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.start-btn {
+    font-size: 3em;
+    justify-content: center;
 }
 
 .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
     align-items: center;
+}
+
+.hide {
+    display: none;
 }
 
 .score-area {

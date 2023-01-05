@@ -1,7 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
     background: black;
     color: white;
     text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+
 }
 
 .logo {
@@ -10,5 +25,42 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
+#question {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.container {
+    width: 500px;
+    max-width: 80%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background: red;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    box-sizing: border-box;
+    
+}
+
+.controls {
+    align-items: center;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 100%;
+    font-size: 1.5rem;
+    display: inline-block;
+   
+}
+
+#scores {
+    display: inline-block;
+    padding: 20px;
 }

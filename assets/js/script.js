@@ -24,3 +24,29 @@ const questions = [
         answerIndex: 0,
     ],
 ];
+
+
+function startGame() {
+
+}
+
+function showNextQuestion() {
+
+}
+ 
+function checkAnswer() {
+
+}
+
+function endGame() {
+
+}
+
+function incrementScore() {
+
+}
+
+function incrementIncorrectAnswer() {
+
+}
+

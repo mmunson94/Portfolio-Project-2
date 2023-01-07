@@ -1,25 +1,25 @@
 const questions = [
     {
         question: "Who is Manchester Uniteds longest serving manager?",
-        options: ["Alex Ferguson", "Matt Busby", "Ron Atkinson", "Jose Mourinho"],
+        option: ["Alex Ferguson", "Matt Busby", "Ron Atkinson", "Jose Mourinho"],
 
         answerIndex: 0,
     },
     {
         question: "Which of these Manchester United players has not won the Ballon d'or?",
-        options: ["Bobby Charlton", "Eric Cantona", "Cristiano Ronaldo", "George Best"],
+        option: ["Bobby Charlton", "Eric Cantona", "Cristiano Ronaldo", "George Best"],
 
         answerIndex: 1,
     },
     {
         question: "In what year was Manchest United founded?",
-        options: ["1904", "1878", "1894", "1910"],
+        option: ["1904", "1878", "1894", "1910"],
 
         answerIndex: 1,
     },
     {
         question: "What were Manchester United originally called?",
-        options: ["F.C. United of Manchester", "Manchester North End F.C.", "Northwhich Manchester Villa F.C.", "Newton Heath LYR"],
+        option: ["F.C. United of Manchester", "Manchester North End F.C.", "Northwhich Manchester Villa F.C.", "Newton Heath LYR"],
 
         answerIndex: 0,
     },
@@ -27,21 +27,31 @@ const questions = [
 
 const questionContainer = document.getElementById("question-container");
 
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
+const questionElement = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
 
-startButton.addEventListener('click', startGame) 
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+
+let currentQuestionIndex = 0;
+
+startButton.addEventListener('click', startGame); 
 
 function startGame() {
     console.log('Started')
     startButton.classList.add('hidden')
     questionContainer.classList.remove('hidden')
     nextButton.classList.remove('hidden')
+
+    currentQuestionIndex = 0;
+
+    showNextQuestion();
 }
-    
+
+let currentQuestion = questions[currentQuestionIndex];
 
 function showNextQuestion() {
-
+    questionElement.innerText = question.question
 }
  
 function checkAnswer() {

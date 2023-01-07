@@ -28,12 +28,15 @@ const questions = [
 const questionContainer = document.getElementById("question-container");
 
 const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
 
 startButton.addEventListener('click', startGame) 
 
 function startGame() {
     console.log('Started')
     startButton.classList.add('hidden')
+    questionContainer.classList.remove('hidden')
+    nextButton.classList.remove('hidden')
 }
     
 

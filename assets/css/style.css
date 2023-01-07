@@ -44,11 +44,11 @@ h1 {
     background: red;
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
     box-sizing: border-box;
     border-radius: 20px;
     border: 5px solid white;
     box-shadow: 0 0 10px 2px;
+    min-height: auto;
 }
 
 .btn-answers {
@@ -74,18 +74,20 @@ h1 {
 .next-btn {
     font-size: 1.75em;
     font-weight: bold;
+    margin: 0 0 auto;
 }
 
 .start-btn {
-    font-size: 1em;
-    justify-content: ;
+    font-size: 3em;
+    justify-content: center; 
 }
 
 .controls {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .hidden {

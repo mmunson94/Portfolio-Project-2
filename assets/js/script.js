@@ -4,7 +4,7 @@ const questions = [
         options: ["Alex Ferguson", "Matt Busby", "Ron Atkinson", "Jose Mourinho"],
 
         answerIndex: 0,
-    }
+    },
     {
         question: "Which of these Manchester United players has not won the Ballon d'or?",
         options: ["Bobby Charlton", "Eric Cantona", "Cristiano Ronaldo", "George Best"],
@@ -17,23 +17,23 @@ const questions = [
 
         answerIndex: 1,
     },
-    [
+    {
         question: "What were Manchester United originally called?",
         options: ["F.C. United of Manchester", "Manchester North End F.C.", "Northwhich Manchester Villa F.C.", "Newton Heath LYR"],
 
         answerIndex: 0,
-    ],
+    },
 ];
 
 const questionContainer = document.getElementById("question-container");
 
-const startButton = document.getElementById('start-btn');
+const startButton = document.getElementById('start-btn')
 
-startButton.addEventListener('click', startGame);
+startButton.addEventListener('click', startGame) 
 
 function startGame() {
     console.log('Started')
-    startButton.classList.add('hide')
+    startButton.classList.add('hidden')
 }
     
 

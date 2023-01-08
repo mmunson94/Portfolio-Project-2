@@ -52,7 +52,7 @@ h1 {
     min-height: auto;
 }
 
-.btn-answers {
+.answer-btns {
     display: grid;
     grid-template-columns: repeat(2, auto);
     padding: 0 0 auto;

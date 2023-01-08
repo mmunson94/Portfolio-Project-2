@@ -33,8 +33,6 @@ const answerButtons = document.getElementById('answer-buttons');
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 
-let currentQuestionIndex = 0;
-
 startButton.addEventListener('click', startGame); 
 
 function startGame() {
@@ -43,15 +41,18 @@ function startGame() {
     questionContainer.classList.remove('hidden')
     nextButton.classList.remove('hidden')
 
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 0
 
-    showNextQuestion();
+    showNextQuestion()
 }
 
 let currentQuestion = questions[currentQuestionIndex];
 
 function showNextQuestion() {
-    questionElement.innerText = question.question
+    let currentQuestion = questions[currentQuestionIndex];
+    
+    questionContainer.textContent = currentQuestion.question;
+
 }
  
 function checkAnswer() {
